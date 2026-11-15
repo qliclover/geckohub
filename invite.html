@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shared care invite · Gecko Record Hub</title>
+<style>
+  :root { --bg:#FBF6EF; --ink:#2B211B; --muted:#6B5D52; --accent:#E0752D; --on:#2B211B; --card:#FFFFFF; --line:#EADFCF; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#191514; --ink:#F4EDE8; --muted:#B5A8A1; --accent:#F08CA8; --on:#1E1416; --card:#231E1C; --line:#3B3230; } }
+  body { background:var(--bg); color:var(--ink); font:16px/1.55 -apple-system, system-ui, sans-serif; margin:0; padding:48px 16px; }
+  main { max-width:480px; margin:0 auto; text-align:center; }
+  h1 { font-size:28px; line-height:1.2; margin:0 0 10px; }
+  p { color:var(--muted); }
+  .code { display:inline-block; margin:18px 0 8px; padding:14px 22px; border-radius:16px; background:var(--card); border:1px solid var(--line);
+          font:700 28px/1 ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing:0.12em; color:var(--ink); }
+  .open { display:block; margin:22px auto 10px; max-width:360px; padding:16px; border-radius:999px; background:var(--accent); color:var(--on);
+          font-weight:600; text-decoration:none; }
+  small { color:var(--muted); }
+</style>
+</head>
+<body>
+<main>
+<h1>You're invited to shared care</h1>
+<p>Someone wants you to help look after their reptiles in Gecko Record Hub.</p>
+<div class="code" id="code">········</div>
+<a class="open" id="open" href="geckohub://invite/">Open in Gecko Record Hub</a>
+<p><small>If the button does nothing, open the app and go to Settings › Join shared care, then type the code above. The invite works once and expires after 7 days.</small></p>
+</main>
+<script>
+  // The code only appears in the page; nothing is sent anywhere.
+  var code = (new URLSearchParams(location.search).get('c') || '').toUpperCase().replace(/[^A-Z0-9]/g, '').slice(0, 12);
+  if (code) {
+    document.getElementById('code').textContent = code;
+    document.getElementById('open').href = 'geckohub://invite/' + code;
+  } else {
+    document.getElementById('code').textContent = 'No code';
+  }
+</script>
+</body>
+</html>
