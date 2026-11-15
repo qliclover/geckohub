@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "files": {
+    "species.json": { "version": 1 },
+    "careguide.json": { "version": 1 },
+    "copy.json": { "version": 1 },
+    "flags.json": { "version": 1 }
+  }
+}

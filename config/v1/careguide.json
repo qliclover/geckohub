@@ -1,0 +1,73 @@
+{
+  "wikipedia": {
+    "crested": "Crested_gecko",
+    "leopard": "Common_leopard_gecko",
+    "gargoyle": "Rhacodactylus_auriculatus",
+    "fat_tailed": "African_fat-tailed_gecko",
+    "day_gecko": "Phelsuma_grandis",
+    "tokay": "Tokay_gecko",
+    "leachianus": "Rhacodactylus_leachianus"
+  },
+  "careSheets": {
+    "crested": [
+      {
+        "title": "Crested gecko care guide",
+        "site": "ReptiFiles",
+        "url": "https://reptifiles.com/crested-gecko/care-guide"
+      }
+    ],
+    "leopard": [
+      {
+        "title": "Leopard gecko care guide",
+        "site": "ReptiFiles",
+        "url": "https://reptifiles.com/leopard-gecko/care-guide"
+      },
+      {
+        "title": "Leopard gecko shedding",
+        "site": "ReptiFiles",
+        "url": "https://reptifiles.com/articles/leopard-gecko-shedding"
+      }
+    ],
+    "gargoyle": [
+      {
+        "title": "Gargoyle gecko care guide",
+        "site": "ReptiFiles",
+        "url": "https://reptifiles.com/gargoyle-gecko/care-guide"
+      },
+      {
+        "title": "Gargoyle gecko shedding",
+        "site": "ReptiFiles",
+        "url": "https://reptifiles.com/articles/gargoyle-gecko-shedding"
+      }
+    ],
+    "fat_tailed": [
+      {
+        "title": "African fat-tailed gecko care sheet",
+        "site": "ReptiFiles",
+        "url": "https://reptifiles.com/african-fat-tailed-gecko"
+      }
+    ],
+    "day_gecko": [
+      {
+        "title": "Giant day gecko care sheet",
+        "site": "ReptiFiles",
+        "url": "https://reptifiles.com/giant-day-gecko"
+      }
+    ],
+    "tokay": [
+      {
+        "title": "Tokay gecko care sheet",
+        "site": "ReptiFiles",
+        "url": "https://reptifiles.com/tokay-gecko"
+      }
+    ],
+    "leachianus": [
+      {
+        "title": "Leachie gecko care sheet",
+        "site": "ReptiFiles",
+        "url": "https://reptifiles.com/leachie-gecko"
+      }
+    ]
+  },
+  "allCareSheets": "https://reptifiles.com/care-sheets"
+}

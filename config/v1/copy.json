@@ -1,0 +1,29 @@
+{
+  "strings": {
+    "careGuide.disclaimer": {
+      "en": "Care advice in this app is general guidance and does not replace a reptile vet.",
+      "zh-Hans": "本应用中的饲养建议仅供一般参考，不能代替爬宠兽医。",
+      "zh-Hant": "本應用中的飼養建議僅供一般參考，不能代替爬寵獸醫。"
+    },
+    "careGuide.targetsNote": {
+      "en": "Starting points for most keepers. Check them against the care sheets below and your own animal.",
+      "zh-Hans": "适合大多数饲主的起始值。请对照下方的饲养资料和你自己的动物调整。",
+      "zh-Hant": "適合大多數飼主的起始值。請對照下方的飼養資料和你自己的動物調整。"
+    },
+    "schedule.empty": {
+      "en": "No routines yet. Add one to get reminders and see what's due.",
+      "zh-Hans": "还没有日程。添加一个就能收到提醒并看到该做什么。",
+      "zh-Hant": "還沒有日程。新增一個就能收到提醒並看到該做什麼。"
+    },
+    "schedule.footer": {
+      "en": "Routines decide what shows as due on Today, the Calendar and widgets. Day-of-week and weekly plans stay put when you log early or late; \"every few days\" counts from the last time you logged it.",
+      "zh-Hans": "日程决定今日、日历和小组件里显示什么该做。按星期几和按周的计划不会因为提前或推迟记录而移动；“每隔几天”从上次记录的日子算起。",
+      "zh-Hant": "日程決定今日、日曆和小工具裡顯示什麼該做。按星期幾和按週的計畫不會因為提前或延後記錄而移動；「每隔幾天」從上次記錄的日子算起。"
+    },
+    "records.empty": {
+      "en": "Nothing logged yet.",
+      "zh-Hans": "还没有记录。",
+      "zh-Hant": "還沒有記錄。"
+    }
+  }
+}

@@ -1,0 +1,258 @@
+{
+ "note": "Default care settings per species. Ranges are common keeper guidance and MUST be checked against a reliable care source before release. Every value is a default the user can change.",
+ "supplements": [
+  "Calcium",
+  "Calcium + D3",
+  "Multivitamin"
+ ],
+ "species": [
+  {
+   "id": "crested",
+   "name": "Crested gecko",
+   "latin": "Correlophus ciliatus",
+   "env": "Tropical, climbing",
+   "scene": "crested",
+   "active": "night",
+   "hotSpotF": [
+    78,
+    82
+   ],
+   "ambientF": [
+    72,
+    78
+   ],
+   "humidity": [
+    60,
+    80
+   ],
+   "uvb": "Optional, low",
+   "diet": [
+    "Crested gecko diet",
+    "Crickets",
+    "Dubia roaches",
+    "BSF larvae",
+    "Fruit purée",
+    "Waxworms"
+   ],
+   "feedEveryDays": 2,
+   "mist": true,
+   "shedAreas": [
+    "Toes",
+    "Tail tip",
+    "Crests",
+    "Eyes"
+   ]
+  },
+  {
+   "id": "leopard",
+   "name": "Leopard gecko",
+   "latin": "Eublepharis macularius",
+   "env": "Arid, ground-dwelling",
+   "scene": "leopard",
+   "active": "dusk and night",
+   "hotSpotF": [
+    88,
+    92
+   ],
+   "ambientF": [
+    75,
+    80
+   ],
+   "humidity": [
+    30,
+    40
+   ],
+   "uvb": "Optional, low",
+   "diet": [
+    "Mealworms",
+    "Dubia roaches",
+    "Crickets",
+    "BSF larvae",
+    "Superworms",
+    "Silkworms",
+    "Waxworms"
+   ],
+   "feedEveryDays": 2,
+   "mist": false,
+   "shedAreas": [
+    "Toes",
+    "Tail tip",
+    "Eyes",
+    "Nose"
+   ]
+  },
+  {
+   "id": "gargoyle",
+   "name": "Gargoyle gecko",
+   "latin": "Rhacodactylus auriculatus",
+   "env": "Tropical, semi-climbing",
+   "scene": "gargoyle",
+   "active": "night",
+   "hotSpotF": [
+    78,
+    82
+   ],
+   "ambientF": [
+    72,
+    78
+   ],
+   "humidity": [
+    60,
+    80
+   ],
+   "uvb": "Optional, low",
+   "diet": [
+    "Crested gecko diet",
+    "Crickets",
+    "Dubia roaches",
+    "BSF larvae",
+    "Fruit purée"
+   ],
+   "feedEveryDays": 2,
+   "mist": true,
+   "shedAreas": [
+    "Toes",
+    "Tail tip",
+    "Eyes"
+   ]
+  },
+  {
+   "id": "fat_tailed",
+   "name": "African fat-tailed gecko",
+   "latin": "Hemitheconyx caudicinctus",
+   "env": "Warm, ground-dwelling, more humid",
+   "scene": "fat_tailed",
+   "active": "night",
+   "hotSpotF": [
+    88,
+    90
+   ],
+   "ambientF": [
+    75,
+    80
+   ],
+   "humidity": [
+    50,
+    60
+   ],
+   "uvb": "Optional, low",
+   "diet": [
+    "Crickets",
+    "Dubia roaches",
+    "Mealworms",
+    "BSF larvae",
+    "Waxworms"
+   ],
+   "feedEveryDays": 2,
+   "mist": false,
+   "shedAreas": [
+    "Toes",
+    "Tail tip",
+    "Eyes",
+    "Nose"
+   ]
+  },
+  {
+   "id": "day_gecko",
+   "name": "Giant day gecko",
+   "latin": "Phelsuma grandis",
+   "env": "Tropical, climbing, active by day",
+   "scene": "day_gecko",
+   "active": "day",
+   "hotSpotF": [
+    88,
+    92
+   ],
+   "ambientF": [
+    78,
+    82
+   ],
+   "humidity": [
+    60,
+    80
+   ],
+   "uvb": "Needed",
+   "diet": [
+    "Day gecko diet",
+    "Crickets",
+    "Dubia roaches",
+    "Fruit purée"
+   ],
+   "feedEveryDays": 2,
+   "mist": true,
+   "shedAreas": [
+    "Toes",
+    "Tail tip",
+    "Eyes"
+   ]
+  },
+  {
+   "id": "tokay",
+   "name": "Tokay gecko",
+   "latin": "Gekko gecko",
+   "env": "Tropical, climbing",
+   "scene": "tokay",
+   "active": "night",
+   "hotSpotF": [
+    85,
+    90
+   ],
+   "ambientF": [
+    78,
+    82
+   ],
+   "humidity": [
+    60,
+    80
+   ],
+   "uvb": "Optional, low",
+   "diet": [
+    "Crickets",
+    "Dubia roaches",
+    "Superworms",
+    "BSF larvae"
+   ],
+   "feedEveryDays": 2,
+   "mist": true,
+   "shedAreas": [
+    "Toes",
+    "Tail tip",
+    "Eyes"
+   ]
+  },
+  {
+   "id": "leachianus",
+   "name": "Leachianus gecko",
+   "latin": "Rhacodactylus leachianus",
+   "env": "Tropical, climbing, large",
+   "scene": "leachianus",
+   "active": "night",
+   "hotSpotF": [
+    78,
+    82
+   ],
+   "ambientF": [
+    72,
+    78
+   ],
+   "humidity": [
+    60,
+    80
+   ],
+   "uvb": "Optional, low",
+   "diet": [
+    "Crested gecko diet",
+    "Dubia roaches",
+    "Crickets",
+    "Fruit purée"
+   ],
+   "feedEveryDays": 3,
+   "mist": true,
+   "shedAreas": [
+    "Toes",
+    "Tail tip",
+    "Eyes"
+   ]
+  }
+ ]
+}
