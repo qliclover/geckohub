@@ -15,6 +15,11 @@
       "zh-Hans": "由 Gecko Hub 根据以上来源用自己的话整理，不能替代兽医的诊断。",
       "zh-Hant": "由 Gecko Hub 根據以上來源用自己的話整理，不能替代獸醫的診斷。"
     },
+    "summary": {
+      "en": "Staying warm, dry air, eating less, power cuts",
+      "zh-Hans": "保暖、空气干燥、吃得少、停电",
+      "zh-Hant": "保暖、空氣乾燥、吃得少、停電"
+    },
     "checked": "2026-11-20"
   },
   "topics": [

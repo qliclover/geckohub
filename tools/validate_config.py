@@ -82,6 +82,7 @@ if wg:
         if not isinstance(t, dict) or not t.get("en"): bad(f"winter-guide.json/{where}: needs English ('en')")
     page = wg.get("page", {})
     for k in ["title", "intro", "footer"]: en(page.get(k), f"page/{k}")
+    if "summary" in page: en(page["summary"], "page/summary")
     import re
     if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", str(page.get("checked", ""))): bad("winter-guide.json/page/checked: a date like 2026-11-20")
     sources = wg.get("sources", {})
