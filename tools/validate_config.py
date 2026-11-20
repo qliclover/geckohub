@@ -63,6 +63,13 @@ if cg:
         for l in links:
             if not l.get("title") or not l.get("site"): bad(f"careguide.json/{sid}: every link needs a title and a site")
             urls.append(l.get("url", ""))
+    # Winter links (optional): the shared list and per-species lists, same rules as care sheets.
+    winter = cg.get("winter") or {}
+    groups = [("winter/all", winter.get("all") or [])] + [(f"winter/{sid}", v) for sid, v in (winter.get("bySpecies") or {}).items()]
+    for where, links in groups:
+        for l in links:
+            if not l.get("title") or not l.get("site"): bad(f"careguide.json/{where}: every link needs a title and a site")
+            urls.append(l.get("url", ""))
     for u in urls:
         if not str(u).startswith("https://"): bad(f"careguide.json: link must start with https:// ({u})")
 
