@@ -9,7 +9,8 @@ its last good copy (or the one built into the app).
 | `species.json` | Species, temperature and humidity targets, feeding interval, diet, misting | Edit values, add species. Never remove a species or rename an `id`. |
 | `careguide.json` | Wikipedia article per species, care sheet links, the "more care sheets" link | Edit or add links (https only). |
 | `copy.json` | A short list of lines in English, Simplified and Traditional Chinese | Reword existing keys only. New keys need an app update. |
-| `flags.json` | Switches for existing features (`careGuideLive`, `wikipediaSummaries`, `iNaturalistPhotos`) | Turn an existing feature off or back on. Never for unreleased features. |
+| `winter-guide.json` | Winter care: key points in Gecko Hub's own words, each naming its source, in en, zh-Hans and zh-Hant; the sources list | Edit text, points and sources. Every point's sources must be listed under `sources`. |
+| `flags.json` | Switches for existing features (`careGuideLive`, `wikipediaSummaries`, `iNaturalistPhotos`), and `winterGuide` | Turn an existing feature off or back on. `winterGuide` is off unless set to `true`: turn it on only after the winter content has been reviewed by someone qualified. |
 
 ## How to change something
 
@@ -20,6 +21,12 @@ its last good copy (or the one built into the app).
 4. Commit and push. GitHub Pages updates in about a minute; phones pick it up next launch.
 
 To undo: put the old content back and add 1 to the version again (versions only go up).
+
+## Winter care
+
+The Winter section and page show only when `flags.json` has `"winterGuide": true`. Builds from before Winter care
+don't know this switch and ignore a `flags.json` that contains it (they keep their built-in switches), which does
+them no harm. Before switching it on in a version that App Review saw with it off, mention it in the review notes.
 
 ## App Store rules
 

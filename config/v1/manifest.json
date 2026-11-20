@@ -1,9 +1,10 @@
 {
-  "version": 2,
+  "version": 3,
   "files": {
     "species.json": { "version": 1 },
-    "careguide.json": { "version": 2 },
+    "careguide.json": { "version": 3 },
     "copy.json": { "version": 1 },
-    "flags.json": { "version": 1 }
+    "flags.json": { "version": 1 },
+    "winter-guide.json": { "version": 1 }
   }
 }

@@ -9,12 +9,13 @@ The app runs the same checks and ignores a file that fails, keeping its last goo
 import json, sys, pathlib
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent / "config" / "v1"
-FILES = ["species.json", "careguide.json", "copy.json", "flags.json"]
+FILES = ["species.json", "careguide.json", "copy.json", "flags.json", "winter-guide.json"]
 # Species the app shipped with: a download may add species but never drop these.
 SHIPPED_SPECIES = {"crested", "leopard", "gargoyle", "fat_tailed", "day_gecko", "tokay", "leachianus"}
 # The only lines copy.json may change (the keys bundled in the app).
 COPY_KEYS = {"careGuide.disclaimer", "careGuide.targetsNote", "schedule.empty", "schedule.footer", "records.empty"}
-FLAGS = {"careGuideLive", "wikipediaSummaries", "iNaturalistPhotos"}
+FLAGS = {"careGuideLive", "wikipediaSummaries", "iNaturalistPhotos", "winterGuide"}
+# Builds from before Winter care refuse a flags.json that names winterGuide and keep their built-in switches.
 
 problems = []
 def bad(msg): problems.append(msg)
@@ -63,13 +64,7 @@ if cg:
         for l in links:
             if not l.get("title") or not l.get("site"): bad(f"careguide.json/{sid}: every link needs a title and a site")
             urls.append(l.get("url", ""))
-    # Winter links (optional): the shared list and per-species lists, same rules as care sheets.
-    winter = cg.get("winter") or {}
-    groups = [("winter/all", winter.get("all") or [])] + [(f"winter/{sid}", v) for sid, v in (winter.get("bySpecies") or {}).items()]
-    for where, links in groups:
-        for l in links:
-            if not l.get("title") or not l.get("site"): bad(f"careguide.json/{where}: every link needs a title and a site")
-            urls.append(l.get("url", ""))
+    if "winter" in cg: bad("careguide.json: the winter links moved to winter-guide.json; remove the 'winter' block")
     for u in urls:
         if not str(u).startswith("https://"): bad(f"careguide.json: link must start with https:// ({u})")
 
@@ -80,6 +75,44 @@ if cp:
         if not langs.get("en"): bad(f"copy.json/{key}: needs English ('en')")
         for lang, text in langs.items():
             if len(text) >= 600: bad(f"copy.json/{key}/{lang}: too long")
+
+wg = load("winter-guide.json")
+if wg:
+    def en(t, where):
+        if not isinstance(t, dict) or not t.get("en"): bad(f"winter-guide.json/{where}: needs English ('en')")
+    page = wg.get("page", {})
+    for k in ["title", "intro", "footer"]: en(page.get(k), f"page/{k}")
+    import re
+    if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", str(page.get("checked", ""))): bad("winter-guide.json/page/checked: a date like 2026-11-20")
+    sources = wg.get("sources", {})
+    for sid, src in sources.items():
+        if not src.get("name") or not src.get("title"): bad(f"winter-guide.json/sources/{sid}: needs a name and a title")
+        if not str(src.get("url", "")).startswith("https://"): bad(f"winter-guide.json/sources/{sid}: link must start with https://")
+    def point(p, where):
+        en(p.get("lead"), f"{where}/lead")
+        for s_ in p.get("sources", []):
+            if s_ not in sources: bad(f"winter-guide.json/{where}: source '{s_}' isn't listed under sources")
+    topics = wg.get("topics", [])
+    if not topics: bad("winter-guide.json: needs at least one topic")
+    for t in topics:
+        tid = t.get("id", "?")
+        en(t.get("title"), f"{tid}/title")
+        if not t.get("points"): bad(f"winter-guide.json/{tid}: needs at least one point")
+        for i, p in enumerate(t.get("points", [])):
+            if "disagree" in p:
+                d = p["disagree"]
+                en(d.get("title"), f"{tid}/{i}/disagree")
+                if not d.get("sides"): bad(f"winter-guide.json/{tid}/{i}: a disagreement needs its sides")
+                for j, side in enumerate(d.get("sides", [])):
+                    en(side.get("label"), f"{tid}/{i}/side{j}/label"); en(side.get("text"), f"{tid}/{i}/side{j}/text")
+                    for s_ in side.get("sources", []):
+                        if s_ not in sources: bad(f"winter-guide.json/{tid}/{i}: source '{s_}' isn't listed under sources")
+            elif "lead" in p:
+                point(p, f"{tid}/{i}")
+    for sid, block in wg.get("species", {}).items():
+        en(block.get("title"), f"species/{sid}/title")
+        if not block.get("points"): bad(f"winter-guide.json/species/{sid}: needs at least one point")
+        for i, p in enumerate(block.get("points", [])): point(p, f"species/{sid}/{i}")
 
 fl = load("flags.json")
 if fl is not None:

@@ -1,0 +1,523 @@
+{
+  "page": {
+    "title": {
+      "en": "Winter care",
+      "zh-Hans": "冬季养护",
+      "zh-Hant": "冬季養護"
+    },
+    "intro": {
+      "en": "Key points gathered from vets and keepers. Each one names its source; the full articles are linked at the end.",
+      "zh-Hans": "整理自兽医和饲主的要点。每条都标明来源，完整文章的链接在页面最后。",
+      "zh-Hant": "整理自獸醫和飼主的要點。每條都標明來源，完整文章的連結在頁面最後。"
+    },
+    "footer": {
+      "en": "Written by Gecko Hub from the sources above, in our own words. Not a substitute for a vet.",
+      "zh-Hans": "由 Gecko Hub 根据以上来源用自己的话整理，不能替代兽医的诊断。",
+      "zh-Hant": "由 Gecko Hub 根據以上來源用自己的話整理，不能替代獸醫的診斷。"
+    },
+    "checked": "2026-11-20"
+  },
+  "topics": [
+    {
+      "id": "warm",
+      "icon": "warm",
+      "title": {
+        "en": "Keep it warm",
+        "zh-Hans": "保持温暖",
+        "zh-Hant": "保持溫暖"
+      },
+      "points": [
+        {
+          "lead": {
+            "en": "Check with a thermometer, not by feel.",
+            "zh-Hans": "用温度计量，别凭感觉。",
+            "zh-Hant": "用溫度計量，別憑感覺。"
+          },
+          "text": {
+            "en": "A temperature gun shows what each spot in the enclosure really is. Take readings at different times of day, the cool end included, because evenings drop fastest.",
+            "zh-Hans": "测温枪能量出缸内每个位置的真实温度。一天里分几次量，冷区也要量，因为傍晚降温最快。",
+            "zh-Hant": "測溫槍能量出缸內每個位置的真實溫度。一天裡分幾次量，冷區也要量，因為傍晚降溫最快。"
+          },
+          "sources": [
+            "vhd"
+          ]
+        },
+        {
+          "lead": {
+            "en": "Put every heater on a thermostat.",
+            "zh-Hans": "每个加热设备都接温控器。",
+            "zh-Hant": "每個加熱設備都接溫控器。"
+          },
+          "text": {
+            "en": "It switches the heat on and off to hold the range, and lowers the risk of burns and fires.",
+            "zh-Hans": "温控器会自动开关加热来稳住温度范围，也降低烫伤和起火的风险。",
+            "zh-Hant": "溫控器會自動開關加熱來穩住溫度範圍，也降低燙傷和起火的風險。"
+          },
+          "sources": [
+            "vetstreet"
+          ]
+        },
+        {
+          "lead": {
+            "en": "Skip heated rocks.",
+            "zh-Hans": "不要用加热石。",
+            "zh-Hant": "不要用加熱石。"
+          },
+          "text": {
+            "en": "They do not warm the whole enclosure and can burn an animal that sits on them.",
+            "zh-Hans": "它热不了整个缸，趴在上面的动物还可能被烫伤。",
+            "zh-Hant": "它熱不了整個缸，趴在上面的動物還可能被燙傷。"
+          },
+          "sources": [
+            "vetstreet",
+            "ava"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dry",
+      "icon": "dry",
+      "title": {
+        "en": "Dry air",
+        "zh-Hans": "空气干燥",
+        "zh-Hant": "空氣乾燥"
+      },
+      "points": [
+        {
+          "lead": {
+            "en": "Heating dries a room.",
+            "zh-Hans": "暖气会让房间变干。",
+            "zh-Hant": "暖氣會讓房間變乾。"
+          },
+          "text": {
+            "en": "Watch the humidity with a hygrometer; you may need to mist longer or more often than in summer.",
+            "zh-Hans": "用湿度计盯着湿度，喷水可能要比夏天更久或更勤。",
+            "zh-Hant": "用濕度計盯著濕度，噴水可能要比夏天更久或更勤。"
+          },
+          "sources": [
+            "vhd"
+          ]
+        },
+        {
+          "lead": {
+            "en": "A room humidifier can help,",
+            "zh-Hans": "房间加湿器有帮助，",
+            "zh-Hant": "房間加濕器有幫助，"
+          },
+          "text": {
+            "en": "at least during the day.",
+            "zh-Hans": "至少白天可以开着。",
+            "zh-Hant": "至少白天可以開著。"
+          },
+          "sources": [
+            "kaplan"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "light",
+      "icon": "light",
+      "title": {
+        "en": "Light",
+        "zh-Hans": "光照",
+        "zh-Hant": "光照"
+      },
+      "points": [
+        {
+          "lead": {
+            "en": "Check the UV bulb when the cold season starts.",
+            "zh-Hans": "入冬时检查 UV 灯。",
+            "zh-Hant": "入冬時檢查 UV 燈。"
+          },
+          "text": {
+            "en": "A bulb can still glow after it has stopped giving useful UV. Compact bulbs are often due about every 6 months; follow the maker's interval.",
+            "zh-Hans": "灯还亮着不代表还有足够的 UV。紧凑型灯管通常约 6 个月要换，以厂家说明为准。",
+            "zh-Hant": "燈還亮著不代表還有足夠的 UV。緊湊型燈管通常約 6 個月要換，以廠家說明為準。"
+          },
+          "sources": [
+            "vhd"
+          ]
+        },
+        {
+          "lead": {
+            "en": "A window is not a UV source.",
+            "zh-Hans": "隔着窗户晒不算 UV。",
+            "zh-Hant": "隔著窗戶曬不算 UV。"
+          },
+          "text": {
+            "en": "Glass blocks the rays.",
+            "zh-Hans": "玻璃会挡掉紫外线。",
+            "zh-Hant": "玻璃會擋掉紫外線。"
+          },
+          "sources": [
+            "ava",
+            "vetstreet"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "slow",
+      "icon": "slow",
+      "title": {
+        "en": "Eating less and slowing down",
+        "zh-Hans": "吃得少、活动少",
+        "zh-Hant": "吃得少、活動少"
+      },
+      "points": [
+        {
+          "lead": {
+            "en": "What brumation is.",
+            "zh-Hans": "什么是冬化。",
+            "zh-Hant": "什麼是冬化。"
+          },
+          "text": {
+            "en": "A winter slow-down some reptiles go into: less appetite, more hiding and sleeping, less basking, fewer droppings. It can last up to about 12 weeks.",
+            "zh-Hans": "有些爬宠冬天会进入的低活动状态：食欲下降、躲藏和睡觉变多、少晒灯、排便减少，最长可持续约 12 周。",
+            "zh-Hant": "有些爬寵冬天會進入的低活動狀態：食慾下降、躲藏和睡覺變多、少曬燈、排便減少，最長可持續約 12 週。"
+          },
+          "sources": [
+            "chewy"
+          ]
+        },
+        {
+          "disagree": {
+            "title": {
+              "en": "Sources disagree on whether to allow it",
+              "zh-Hans": "要不要让它冬化，各来源说法不一",
+              "zh-Hant": "要不要讓牠冬化，各來源說法不一"
+            },
+            "sides": [
+              {
+                "label": {
+                  "en": "Against:",
+                  "zh-Hans": "不建议：",
+                  "zh-Hant": "不建議："
+                },
+                "text": {
+                  "en": "do not let a pet reptile go dormant. Keep temperatures steady all year and keep offering food.",
+                  "zh-Hans": "不要让宠物爬宠进入休眠。全年保持恒温，照常喂食。",
+                  "zh-Hant": "不要讓寵物爬寵進入休眠。全年保持恆溫，照常餵食。"
+                },
+                "sources": [
+                  "ava",
+                  "vetstreet"
+                ]
+              },
+              {
+                "label": {
+                  "en": "Open to it:",
+                  "zh-Hans": "可以接受：",
+                  "zh-Hant": "可以接受："
+                },
+                "text": {
+                  "en": "for a species that does it in the wild it is natural. Whether to allow it depends on age, weight and health.",
+                  "zh-Hans": "野外本来就会冬化的物种，这是自然现象。是否允许取决于年龄、体重和健康状况。",
+                  "zh-Hant": "野外本來就會冬化的物種，這是自然現象。是否允許取決於年齡、體重和健康狀況。"
+                },
+                "sources": [
+                  "chewy"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "lead": {
+            "en": "If your animal slows down:",
+            "zh-Hans": "如果它慢下来了：",
+            "zh-Hant": "如果牠慢下來了："
+          },
+          "text": {
+            "en": "keep fresh water available, check its weight and breathing every week, and handle it less.",
+            "zh-Hans": "保持有干净的水，每周看一次体重和呼吸，少上手。",
+            "zh-Hant": "保持有乾淨的水，每週看一次體重和呼吸，少上手。"
+          },
+          "sources": [
+            "chewy"
+          ]
+        },
+        {
+          "lead": {
+            "en": "Not for every animal.",
+            "zh-Hans": "不是每只都适合。",
+            "zh-Hant": "不是每隻都適合。"
+          },
+          "text": {
+            "en": "Very young, very old, underweight or sick animals are at risk. Ask a vet first.",
+            "zh-Hans": "太小、太老、偏瘦或生病的个体有风险，先问兽医。",
+            "zh-Hant": "太小、太老、偏瘦或生病的個體有風險，先問獸醫。"
+          },
+          "sources": [
+            "chewy",
+            "repmag"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "power",
+      "icon": "power",
+      "title": {
+        "en": "If the power goes out",
+        "zh-Hans": "如果停电",
+        "zh-Hant": "如果停電"
+      },
+      "points": [
+        {
+          "lead": {
+            "en": "Plan before winter.",
+            "zh-Hans": "入冬前先想好。",
+            "zh-Hant": "入冬前先想好。"
+          },
+          "text": {
+            "en": "Decide now what you will do: a generator, or a place that can board your animal.",
+            "zh-Hans": "现在就决定停电时怎么办：备发电机，或者找好能寄养的地方。",
+            "zh-Hant": "現在就決定停電時怎麼辦：備發電機，或者找好能寄養的地方。"
+          },
+          "sources": [
+            "vetstreet"
+          ]
+        },
+        {
+          "lead": {
+            "en": "Hold the heat in.",
+            "zh-Hans": "把热量留住。",
+            "zh-Hant": "把熱量留住。"
+          },
+          "text": {
+            "en": "Wrap the enclosure in thick towels or blankets, most of all at night, and move it to the best-insulated room. Never cover an enclosure while its lamps are on.",
+            "zh-Hans": "用厚毛巾或毯子把缸包起来，夜里尤其要包，并挪到保温最好的房间。灯开着的时候绝对不要盖。",
+            "zh-Hant": "用厚毛巾或毯子把缸包起來，夜裡尤其要包，並挪到保溫最好的房間。燈開著的時候絕對不要蓋。"
+          },
+          "sources": [
+            "kaplan"
+          ]
+        },
+        {
+          "lead": {
+            "en": "Small heat sources.",
+            "zh-Hans": "小型热源。",
+            "zh-Hant": "小型熱源。"
+          },
+          "text": {
+            "en": "Hand-warmer style heat packs can help a small animal in a well-wrapped enclosure.",
+            "zh-Hans": "缸包严实后，暖宝宝这类发热包对小型动物有帮助。",
+            "zh-Hant": "缸包嚴實後，暖暖包這類發熱包對小型動物有幫助。"
+          },
+          "sources": [
+            "kaplan"
+          ]
+        },
+        {
+          "lead": {
+            "en": "Warm a chilled animal slowly.",
+            "zh-Hans": "受冻后要慢慢回温。",
+            "zh-Hant": "受凍後要慢慢回溫。"
+          },
+          "text": {
+            "en": "Fast heat or a hot bath can kill. Raise the temperature step by step over several hours.",
+            "zh-Hans": "快速加热或泡热水可能致命。用几个小时一点点把温度升回来。",
+            "zh-Hant": "快速加熱或泡熱水可能致命。用幾個小時一點點把溫度升回來。"
+          },
+          "sources": [
+            "kaplan"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vet",
+      "icon": "vet",
+      "title": {
+        "en": "Call a reptile vet if you see",
+        "zh-Hans": "出现这些情况请找爬宠兽医",
+        "zh-Hant": "出現這些情況請找爬寵獸醫"
+      },
+      "points": [
+        {
+          "lead": {
+            "en": "Sunken or closed eyes,",
+            "zh-Hans": "眼睛凹陷或闭着，",
+            "zh-Hant": "眼睛凹陷或閉著，"
+          },
+          "text": {
+            "en": "wrinkled skin, a spine that shows, or weight loss.",
+            "zh-Hans": "皮肤起皱、脊椎突出，或体重下降。",
+            "zh-Hant": "皮膚起皺、脊椎突出，或體重下降。"
+          },
+          "sources": [
+            "ava"
+          ]
+        },
+        {
+          "lead": {
+            "en": "Shed that comes off in patches.",
+            "zh-Hans": "蜕皮一块一块蜕不干净。",
+            "zh-Hant": "蛻皮一塊一塊蛻不乾淨。"
+          },
+          "text": {
+            "en": "",
+            "zh-Hans": "",
+            "zh-Hant": ""
+          },
+          "sources": [
+            "ava"
+          ]
+        },
+        {
+          "lead": {
+            "en": "Sudden weakness,",
+            "zh-Hans": "突然没力气，",
+            "zh-Hant": "突然沒力氣，"
+          },
+          "text": {
+            "en": "discharge from the eyes, nose or mouth, swollen jaw or joints, or breathing with the mouth open.",
+            "zh-Hans": "眼、鼻、口有分泌物，下颌或关节肿胀，或张嘴呼吸。",
+            "zh-Hant": "眼、鼻、口有分泌物，下顎或關節腫脹，或張嘴呼吸。"
+          },
+          "sources": [
+            "chewy"
+          ]
+        }
+      ]
+    }
+  ],
+  "species": {
+    "crested": {
+      "title": {
+        "en": "For crested geckos",
+        "zh-Hans": "睫角守宫专属",
+        "zh-Hant": "睫角守宮專屬"
+      },
+      "points": [
+        {
+          "lead": {
+            "en": "A cooler winter range.",
+            "zh-Hans": "冬天温度可以低一些。",
+            "zh-Hant": "冬天溫度可以低一些。"
+          },
+          "text": {
+            "en": "One breeder keeps crested geckos at 68–75°F (20–24°C) in winter and 75–80°F (24–27°C) in summer, and reports that they eat less and grow less in the cooler range.",
+            "zh-Hans": "一位繁殖者冬天把睫角守宫养在 68–75°F（20–24°C），夏天 75–80°F（24–27°C），并提到在较低温度下它们吃得少、长得慢。",
+            "zh-Hant": "一位繁殖者冬天把睫角守宮養在 68–75°F（20–24°C），夏天 75–80°F（24–27°C），並提到在較低溫度下牠們吃得少、長得慢。"
+          },
+          "sources": [
+            "rilwater"
+          ]
+        },
+        {
+          "lead": {
+            "en": "Too hot is the bigger danger.",
+            "zh-Hans": "过热才是更大的危险。",
+            "zh-Hant": "過熱才是更大的危險。"
+          },
+          "text": {
+            "en": "The same breeder warns that above 85°F (29°C) is quickly dangerous.",
+            "zh-Hans": "同一位繁殖者提醒：超过 85°F（29°C）很快就有危险。",
+            "zh-Hant": "同一位繁殖者提醒：超過 85°F（29°C）很快就有危險。"
+          },
+          "sources": [
+            "rilwater"
+          ]
+        },
+        {
+          "lead": {
+            "en": "For breeders.",
+            "zh-Hans": "给繁殖者。",
+            "zh-Hant": "給繁殖者。"
+          },
+          "text": {
+            "en": "A university collection suggests a winter cool-down as part of breeding.",
+            "zh-Hans": "一所大学的两爬馆建议，繁殖时安排一段冬季降温。",
+            "zh-Hant": "一所大學的兩爬館建議，繁殖時安排一段冬季降溫。"
+          },
+          "sources": [
+            "bgsu"
+          ]
+        }
+      ]
+    },
+    "leopard": {
+      "title": {
+        "en": "For leopard geckos",
+        "zh-Hans": "豹纹守宫专属",
+        "zh-Hant": "豹紋守宮專屬"
+      },
+      "points": [
+        {
+          "lead": {
+            "en": "How one long-time keeper winters them.",
+            "zh-Hans": "一位资深饲主的越冬做法。",
+            "zh-Hant": "一位資深飼主的越冬做法。"
+          },
+          "text": {
+            "en": "Only healthy animals at a good weight. Stop feeding about two weeks before, with heat and light still on, so the gut empties. Then keep them between 50 and 68°F (10–20°C) with water always available, and weigh them about every two weeks.",
+            "zh-Hans": "只适用于健康、体重正常的个体。提前约两周停喂，期间保持加热和光照，让肠道排空。之后把温度保持在 50–68°F（10–20°C），一直提供饮水，大约每两周称一次体重。",
+            "zh-Hant": "只適用於健康、體重正常的個體。提前約兩週停餵，期間保持加熱和光照，讓腸道排空。之後把溫度保持在 50–68°F（10–20°C），一直提供飲水，大約每兩週稱一次體重。"
+          },
+          "sources": [
+            "repmag"
+          ]
+        },
+        {
+          "lead": {
+            "en": "This is a keeper's method, not a vet's advice.",
+            "zh-Hans": "这是饲主的做法，不是兽医建议。",
+            "zh-Hant": "這是飼主的做法，不是獸醫建議。"
+          },
+          "text": {
+            "en": "The vet sources on this page advise keeping pet reptiles warm all winter.",
+            "zh-Hans": "本页的兽医类来源建议整个冬天都让宠物爬宠保持温暖。",
+            "zh-Hant": "本頁的獸醫類來源建議整個冬天都讓寵物爬寵保持溫暖。"
+          },
+          "sources": []
+        }
+      ]
+    }
+  },
+  "sources": {
+    "ava": {
+      "name": "Australian Veterinary Association",
+      "title": "Keeping reptiles in winter",
+      "url": "https://vetvoice.com.au/articles/keeping-reptiles-in-winter"
+    },
+    "vetstreet": {
+      "name": "Vetstreet",
+      "title": "How to Keep Your Pet Reptile Safe in Winter",
+      "url": "https://www.vetstreet.com/?p=3496"
+    },
+    "vhd": {
+      "name": "Vet Help Direct",
+      "title": "Keeping reptiles happy and healthy in the winter",
+      "url": "https://vethelpdirect.com/?p=47978"
+    },
+    "kaplan": {
+      "name": "Melissa Kaplan",
+      "title": "Winter Advisory",
+      "url": "https://anapsid.org/winter.html"
+    },
+    "chewy": {
+      "name": "Chewy, vet reviewed",
+      "title": "Brumation: What It Is and Why Lizards Do It",
+      "url": "https://www.chewy.com/education/reptile-and-amphibian/general/brumation-in-lizards"
+    },
+    "repmag": {
+      "name": "Reptiles Magazine",
+      "title": "Preparing Reptiles For Winter's Sleep",
+      "url": "https://reptilesmagazine.com/preparing-reptiles-for-winters-sleep/"
+    },
+    "rilwater": {
+      "name": "Rilwater Reptiles",
+      "title": "Care information",
+      "url": "https://sites.google.com/view/rilwater-reptiles/care-information"
+    },
+    "bgsu": {
+      "name": "BGSU Herpetarium",
+      "title": "New Caledonian Crested Gecko",
+      "url": "https://www.bgsu.edu/arts-and-sciences/biological-sciences/facilities-and-resources/bgsu-herpetarium/animals/reptiles/new-caledonian-crested-gecko.html"
+    }
+  }
+}

@@ -69,55 +69,5 @@
       }
     ]
   },
-  "allCareSheets": "https://reptifiles.com/care-sheets",
-  "winter": {
-    "all": [
-      {
-        "title": "Keeping reptiles in winter",
-        "site": "Australian Veterinary Association",
-        "url": "https://vetvoice.com.au/articles/keeping-reptiles-in-winter"
-      },
-      {
-        "title": "How to Keep Your Pet Reptile Safe in Winter",
-        "site": "Vetstreet",
-        "url": "https://www.vetstreet.com/?p=3496"
-      },
-      {
-        "title": "Keeping reptiles happy and healthy in the winter",
-        "site": "Vet Help Direct",
-        "url": "https://vethelpdirect.com/?p=47978"
-      },
-      {
-        "title": "Winter Advisory: power failures and keeping warm",
-        "site": "Melissa Kaplan's Herp Care Collection",
-        "url": "https://anapsid.org/winter.html"
-      },
-      {
-        "title": "Brumation: What It Is and Why Lizards Do It",
-        "site": "Chewy, vet reviewed",
-        "url": "https://www.chewy.com/education/reptile-and-amphibian/general/brumation-in-lizards"
-      }
-    ],
-    "bySpecies": {
-      "crested": [
-        {
-          "title": "Care information: winter cooling",
-          "site": "Rilwater Reptiles",
-          "url": "https://sites.google.com/view/rilwater-reptiles/care-information"
-        },
-        {
-          "title": "New Caledonian Crested Gecko: care summary",
-          "site": "BGSU Herpetarium",
-          "url": "https://www.bgsu.edu/arts-and-sciences/biological-sciences/facilities-and-resources/bgsu-herpetarium/animals/reptiles/new-caledonian-crested-gecko.html"
-        }
-      ],
-      "leopard": [
-        {
-          "title": "Preparing Reptiles For Winter's Sleep",
-          "site": "Reptiles Magazine",
-          "url": "https://reptilesmagazine.com/preparing-reptiles-for-winters-sleep/"
-        }
-      ]
-    }
-  }
+  "allCareSheets": "https://reptifiles.com/care-sheets"
 }
